@@ -1,0 +1,14 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">User Management System</a>
+    </div>
+
+    <div>
+      <a routerLink="register-user" *ngIf="!isLoggedIn"> Sign Up</a>
+      <a routerLink="login-user" *ngIf="!isLoggedIn"> Log In</a>
+      <a routerLink="update-profile" *ngIf="isLoggedIn">Update Profile</a>
+      <a href="#" *ngIf="isLoggedIn"> Log Out</a>
+    </div>
+  </div>
+</nav>

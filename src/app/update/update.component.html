@@ -1,0 +1,27 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="col-md-8" style="width:800px; margin:0 auto;">
+      <div class="card card-plain">
+        <div class="card-header card-header-danger">
+          <h4 class="card-title mt-0"> Update User </h4>
+        </div>
+        <div class="card-body">
+          <form novalidate [formGroup]="updateUserForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-5">
+                <label>{{user.name}}</label>
+                <input formControlName="fullName" placeholder=" Name..." type="text">
+              </div>
+              <div class="col-md-5">
+                <label>{{user.first_name}}</label>
+                <input formControlName="job" placeholder=" Job..." type="text">
+              </div>
+
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
